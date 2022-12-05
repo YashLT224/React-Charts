@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import  AreaChart from "./AreaChart";
+import DownloadChart from "./downloadChart";
+import Linechart from "./linechart";
+import SimpleLineChart from "./simpleChart";
+import Biaxial from './biaxial'
+import LegendToggling from "./legendTogglng";
+import RenderChart from "./group";
+import TooltipClickable from './TooltipClickable'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+ 
+    <div style={{marginLeft:"10%"}} className="App">
+         <Linechart/>
+         <AreaChart/>
+         <SimpleLineChart/>
+         <DownloadChart/>
+         <Biaxial/>
+         <LegendToggling/>
+    {/* <RenderChart/> */}
+    <TooltipClickable/>
     </div>
   );
 }

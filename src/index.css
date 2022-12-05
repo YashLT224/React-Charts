@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.chart-heading{
+  color:orange;
+  text-align:center;
+  text-decoration: underline ;
+}
+.recharts-tooltip-wrapper{
+  pointer-events: auto !important;
+}
