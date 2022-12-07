@@ -6,6 +6,8 @@ import Biaxial from './biaxial'
 import LegendToggling from "./legendTogglng";
 import RenderChart from "./group";
 import TooltipClickable from './TooltipClickable'
+import Analyticsdata from './Analyticsdata'
+import Sankeychart from "./sankeychart";
 function App() {
   return (
  
@@ -17,7 +19,10 @@ function App() {
          <Biaxial/>
          <LegendToggling/>
     {/* <RenderChart/> */}
+    <Sankeychart/>
     <TooltipClickable/>
+
+    <Analyticsdata/>
     </div>
   );
 }
