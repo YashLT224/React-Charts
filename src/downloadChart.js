@@ -5,7 +5,7 @@ import {pdata} from './data'
 import {ResponsiveContainer,LineChart,Line,XAxis,YAxis,CartesianGrid,Legend,Tooltip,Brush,Customized,AreaChart, Area} from 'recharts'
 
 const DownloadChart = () => {
-    const [getAreaPng, { ref: areaRef }] = useCurrentPng();
+    const [getAreaPng, { ref: areaRef, }] = useCurrentPng();
     const handleAreaDownload = useCallback(async () => {
         const png = await getAreaPng();
         if (png) {
@@ -25,8 +25,9 @@ const DownloadChart = () => {
                      <XAxis  dataKey="name" interval="preserveStartEnd" tickFormatter={(value) => value + " Programming"} />
                      <XAxis  dataKey="namee" interval="preserveStartEnd" tickFormatter={(value) => value + " Prosmsnkßgramming"}  allowDuplicatedCategory={false}/>
                      <YAxis/>
-                     <Brush/>
                      <Legend/>
+                     <Brush/>
+                   
                      <Tooltip contentStyle={{ backgroundColor: "#8884d8", color: "#fff"  }} itemStyle={{ color: "#fff" }} cursor={false} />
                      <Line type="monotone" dataKey="student" strokeWidth="3" stroke="red" activeDot={{r:2}}/> 
                      <Line dataKey="fees" stroke="blue"    strokeDasharray="3 4 5 2"/> 

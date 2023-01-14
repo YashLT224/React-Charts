@@ -8,21 +8,27 @@ import RenderChart from "./group";
 import TooltipClickable from './TooltipClickable'
 import Analyticsdata from './Analyticsdata'
 import Sankeychart from "./sankeychart";
+import Zoom from './Zoom'
+import Zoom1 from "./Zoom1";
+import Pie from './pie'
 function App() {
   return (
  
     <div style={{marginLeft:"10%"}} className="App">
-         <Linechart/>
+      <Pie/>
+      <Zoom/>
+      <Zoom1/>
+          <Linechart/>
          <AreaChart/>
          <SimpleLineChart/>
-         <DownloadChart/>
+         <DownloadChart/> 
          <Biaxial/>
-         <LegendToggling/>
+         {/* <LegendToggling/> */}
     {/* <RenderChart/> */}
-    <Sankeychart/>
+    {/* <Sankeychart/>
     <TooltipClickable/>
 
-    <Analyticsdata/>
+    <Analyticsdata/> */}
     </div>
   );
 }
